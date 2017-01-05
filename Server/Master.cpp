@@ -281,9 +281,9 @@ void LogonServer::CheckForDeadSockets()
 
 void LogonServer::PrintBanner()
 {
-    sLog.outBasic(LOGON_BANNER, BUILD_HASH_STR, CONFIG, PLATFORM_TEXT, ARCH);
+    sLog.outBasic("<< AscEmu %s/%s-%s (%s) :: Logon Server >>", BUILD_HASH_STR, CONFIG, PLATFORM_TEXT, ARCH);
     sLog.outBasic("========================================================");
-    sLog.outErrorSilent(LOGON_BANNER, BUILD_HASH_STR, CONFIG, PLATFORM_TEXT, ARCH); // Echo off.
+    sLog.outErrorSilent("<< AscEmu %s/%s-%s (%s) :: Logon Server >>", BUILD_HASH_STR, CONFIG, PLATFORM_TEXT, ARCH); // Echo off.
     sLog.outErrorSilent("========================================================"); // Echo off.
 }
 
