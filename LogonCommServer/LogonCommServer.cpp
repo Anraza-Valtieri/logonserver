@@ -461,7 +461,7 @@ void LogonCommServerSocket::HandleDatabaseModify(WorldPacket & recvData)
             recvData >> banreason;
 
             // remember we expect this in uppercase
-            arcemu_TOUPPER(account);
+            Util::StringToUpperCase(account);
 
             Account* pAccount = sAccountMgr.GetAccount(account);
             if (pAccount == NULL)
@@ -483,7 +483,7 @@ void LogonCommServerSocket::HandleDatabaseModify(WorldPacket & recvData)
             recvData >> gm;
 
             // remember we expect this in uppercase
-            arcemu_TOUPPER(account);
+            Util::StringToUpperCase(account);
 
             Account* pAccount = sAccountMgr.GetAccount(account);
             if (pAccount == NULL)
@@ -505,7 +505,7 @@ void LogonCommServerSocket::HandleDatabaseModify(WorldPacket & recvData)
             recvData >> duration;
 
             // remember we expect this in uppercase
-            arcemu_TOUPPER(account);
+            Util::StringToUpperCase(account);
 
             Account* pAccount = sAccountMgr.GetAccount(account);
             if (pAccount == NULL)
@@ -627,7 +627,7 @@ void LogonCommServerSocket::HandleDatabaseModify(WorldPacket & recvData)
             std::string name_save = name;  // save original name to check
 
             // remember we expect this in uppercase
-            arcemu_TOUPPER(name);
+            Util::StringToUpperCase(name);
 
             auto account_check = sAccountMgr.GetAccount(name);
 
@@ -690,7 +690,7 @@ void LogonCommServerSocket::HandleRequestCheckAccount(WorldPacket & recvData)
             std::string account_name_save = account_name;  // save original account_name to check
 
             // remember we expect this in uppercase
-            arcemu_TOUPPER(account_name);
+            Util::StringToUpperCase(account_name);
 
             auto account_check = sAccountMgr.GetAccount(account_name);
             if (account_check == nullptr)
