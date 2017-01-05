@@ -20,7 +20,7 @@
 #ifndef __LOGONCONSOLE_H
 #define __LOGONCONSOLE_H
 
-#include "Common.h"
+#include "Common.hpp"
 #include "CThreads.h"
 
 enum checkType

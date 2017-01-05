@@ -26,7 +26,7 @@
 #include <sstream>
 #include <string>
 
-#include "Common.h"
+#include "Common.hpp"
 #include <Network/Network.h>
 
 #include "../shared/Log.h"
