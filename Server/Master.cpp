@@ -403,10 +403,10 @@ bool LogonServer::LoadLogonConfiguration()
 
     // re-set the allowed server IP's
     std::string allowedIps = Config.MainConfig.GetStringDefault("LogonServer", "AllowedIPs", "");
-    std::vector<std::string> vips = StrSplit(allowedIps, " ");
+    std::vector<std::string> vips = Util::SplitStringBySeperator(allowedIps, " ");
 
     std::string allowedModIps = Config.MainConfig.GetStringDefault("LogonServer", "AllowedModIPs", "");
-    std::vector<std::string> vipsmod = StrSplit(allowedModIps, " ");
+    std::vector<std::string> vipsmod = Util::SplitStringBySeperator(allowedModIps, " ");
 
     m_allowedIpLock.Acquire();
     m_allowedIps.clear();
