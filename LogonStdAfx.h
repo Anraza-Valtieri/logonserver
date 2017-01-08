@@ -32,7 +32,7 @@
 #include "../shared/Log.h"
 #include "../shared/Util.hpp"
 #include "../shared/ByteBuffer.h"
-#include "../shared/Config/ConfigEnv.h"
+#include "../shared/Config/Config.h"
 //#include <zlib.h>
 
 #include "../shared/Database/DatabaseEnv.h"

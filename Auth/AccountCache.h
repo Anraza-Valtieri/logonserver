@@ -21,6 +21,7 @@
 #define __ACCOUNTCACHE_H
 
 #include "Common.hpp"
+#include "../shared/Config/Config.h"
 #include "../shared/Database/DatabaseEnv.h"
 
 struct Account
