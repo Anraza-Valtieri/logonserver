@@ -29,7 +29,7 @@
 #include "Common.hpp"
 #include <Network/Network.h>
 
-#include "../shared/Log.h"
+#include "../shared/Log.hpp"
 #include "../shared/Util.hpp"
 #include "../shared/ByteBuffer.h"
 #include "../shared/Config/Config.h"
